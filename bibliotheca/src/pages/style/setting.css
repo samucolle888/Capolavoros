@@ -1,0 +1,63 @@
+.cont-setting {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+}
+
+.form-a, .form-b {
+    width: 50%;
+    height: 50%;
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.lb-set {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.form-a input[type="text"],
+.form-b input[type="password"] {
+    width: 96%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-set {
+    margin-top: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-set:hover {
+    background-color: #0056b3;
+}
+
+.title-set {
+    color: rgb(82, 82, 82);
+}
+
+@media (max-width: 768px) {
+    .cont-setting {
+        padding-top: 13rem;
+        flex-direction: column; /* Cambia la direzione del flex a colonna su schermi piccoli */
+        height: auto; /* Lascia che l'altezza sia determinata dal contenuto */
+    }
+
+    .form-a, .form-b {
+        width: 90%; /* Aumenta la larghezza per riempire più spazio disponibile */
+        margin: 0.5rem; /* Riduci il margine per adattarsi meglio a schermi piccoli */
+    }
+}

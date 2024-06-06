@@ -1,0 +1,62 @@
+
+.container {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    margin-top: 6rem;
+}
+
+.title {
+    color: #333;
+    font-size: 24px;
+    padding: 6rem;
+}
+
+.title h1 {
+    font-size: 3em;
+    background: linear-gradient(to right, #1A9988, #1A9988, #EB5600, #EB5600, #EB5600);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 5rem;
+}
+
+.title h4 {
+    width: 100%;
+}
+
+.form-login {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    padding: 6rem;
+    width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-login label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.form-login input[type="text"],
+.form-login input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-login {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background-color: #0056b3;
+}

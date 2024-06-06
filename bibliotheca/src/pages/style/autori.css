@@ -1,0 +1,55 @@
+.container-autori {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.title-autori {
+    background: linear-gradient(to right, #1A9988, #1A9988, #EB5600, #EB5600);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.8rem;
+}
+
+.card-container, .card-autore {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.card-autore {
+    box-shadow: 0 4px 8px rgba(0, 0.1, 0, 0.4);
+}
+
+.libri-autore {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+}   
+
+.nome-autore {
+    font-size: 2.3rem;
+    font-weight: bold;
+    width: 100%;
+    color: #1A9988;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container-autori {
+        padding: 1rem;
+    }
+
+    .title-autori {
+        padding-top: 9rem;
+        font-size: 2.2rem;
+    }
+
+    .nome-autore {
+        font-size: 2rem;
+    }
+}

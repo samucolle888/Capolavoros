@@ -1,0 +1,118 @@
+.navbar {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgba(160, 160, 160, 0.5); /* Colore bianco trasparente */
+    backdrop-filter: blur(10px); /* Sfocatura */
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.2); /* Bordo leggermente visibile */
+}
+
+
+.brand {
+    background: linear-gradient(to right, #1A9988, #1A9988, #EB5600, #EB5600, #EB5600);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    padding-right: 3rem;
+    font-size: 3rem;
+    margin-left: 20px;
+}
+
+.autori, .tipologie {
+    font-size: 1rem;
+    padding-right: 1.8rem;
+    margin-left: 20px;
+    color: rgb(96, 96, 96);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.autori:hover {
+    cursor: pointer;
+    color: #1A9988;
+}
+.tipologie:hover {
+    cursor: pointer;
+    color: #EB5600;
+}
+
+.search-form {
+    display: flex;
+}
+
+#search {
+    padding: 5px;
+    border: 1px solid rgb(215, 213, 213);
+    border-radius: 20px;
+    width: 500px;
+    height: 30px;
+    outline: none;
+}
+
+.btn-search {
+    padding: 5px 10px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(199, 198, 198);
+}
+
+img {
+    width: 20px;
+    height: 20px;
+}
+
+.user-container {
+    display: flex;
+    align-items: center;
+    margin-left: 10rem;
+}
+
+.user {
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.user:hover {
+    color: rgb(52, 52, 52);
+    cursor: pointer;
+}
+
+.user-icon{
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .brand {
+        padding-right: 0;
+        margin-bottom: 10px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .utente {
+        margin-top: 10px;
+    }
+}

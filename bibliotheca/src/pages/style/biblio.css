@@ -1,0 +1,97 @@
+.home-container{
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.title-home, .minititle-home {
+    background: linear-gradient(to right, #1A9988, #1A9988, #EB5600, #EB5600);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title-home {
+    font-size: 2.8rem;
+}
+
+.minititle-home {
+    font-size: 1.2rem;
+}
+
+.container-book {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1.1rem;
+}
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    width: calc(20% - 2.2rem); /* Larghezza massima per una riga di 5 card */
+    max-width: 130px;
+    height: 200px;
+    margin: 1.1rem;
+    justify-content: center; 
+    align-items: center;
+    position: relative; /* Aggiunto per posizionare il titolo sopra l'immagine */
+    text-decoration: none;
+}
+
+.book-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.img-book {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.book-name {
+    font-size: 1rem;
+    color: black;
+    width: 100%;
+    background-color: #b4b4b4;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Media query per adattare lo stile alle dimensioni dello schermo */
+@media screen and (max-width: 768px) {
+    .home-container {
+        padding: 1rem;
+    }
+
+    .title-home {
+        font-size: 2.2rem;
+        padding-top: 9rem;
+    }
+
+    .minititle-home {
+        font-size: 1rem;
+    }
+
+    .book-card {
+        width: calc(33.33% - 1.1rem); /* Larghezza massima per una riga di 3 card */
+        max-width: 250px;
+        height: 250px;
+        margin: 0.5rem;
+    }
+
+    .container-book {
+        padding: 0.5rem;
+    }
+
+    .book-name {
+        font-size: 0.9rem;
+    }
+
+    /* Aggiungi altre regole CSS per adattare ulteriormente il layout alle dimensioni dello schermo desiderate */
+}

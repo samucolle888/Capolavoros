@@ -1,0 +1,58 @@
+.tipo-container {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.title-tipologie {
+    background: linear-gradient(to right, #1A9988, #1A9988, #EB5600, #EB5600);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3.3rem;
+}
+
+.card-container, .card-tipo {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.card-tipo {
+    box-shadow: 0 4px 8px rgba(0, 0.1, 0, 0.4);
+}
+
+.libri-tipo {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+}   
+
+.nome-tipo {
+    font-size: 2.3rem;
+    font-weight: bold;
+    width: 100%;
+    color: #EB5600;
+}
+
+
+/* Media query per adattare lo stile alle dimensioni dello schermo */
+@media screen and (max-width: 768px) {
+    .tipo-container {
+        padding: 1rem;
+    }
+
+    .title-tipologie {
+        font-size: 2.8rem;
+        padding-top: 9rem;
+    }
+
+    .nome-tipo {
+        font-size: 2rem;
+    }
+
+    /* Aggiungi altre regole CSS per adattare ulteriormente il layout alle dimensioni dello schermo desiderate */
+}
